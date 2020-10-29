@@ -1,0 +1,221 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Baloo Chettan 2', cursive;
+    line-height: 1.5;
+}
+
+
+.title-text{
+    font-size:40px;
+    text-align: center;
+}
+/* header */
+.header{ 
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url(/img/hero.jpg) center/cover no-repeat fixed;
+}
+
+.hero{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .title{
+    color : #ffffff;
+    font-size: 40px;
+}
+
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius : 200px;
+    font-weight: 600;
+    background-color: green;
+    color : #ffffff;
+    cursor : pointer;
+    border : 1px solid green;
+    margin-top: 10px;
+}
+
+.hero-button:hover{
+    background : white;
+    color: blue;
+    border:none;
+}
+
+.pulsate{
+    animation: pulsate 3s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: 0.5;
+    color: #ffff;
+}
+
+@-webkit-keyframes pulsate{
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+/* end of header */
+
+/* about us*/
+
+#about{
+    padding: 40px;
+}
+.about{
+    margin : 30px 0;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.about-center{
+    display : flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.about-icon .fas{
+    width: 75%;
+    color:green;
+    margin-right:20px;
+}
+
+.about-subtitle{
+    text-transform: capitalize;
+    color: orange;
+    font-size: 25px;
+}
+.about-info{
+    margin-top:10px;
+    line-height: 1.5;
+    font-size:18px;
+}
+
+.about-icon:hover .fas,
+.about-subtitle:hover{
+    transition: transofrm 2s ease, color 2s ease;
+    transform:translateY(-10px);
+    cursor: pointer;
+    color : #cd6100;
+}
+/* end of about us*/
+
+/* menu */
+.menu-image{
+    min-height: 60vh;
+    background: url(/img/hero.jpg) center/cover fixed no-repeat;    
+}
+
+.menu-text{
+    min-height: 60vh;
+    align-items: center;
+    columns:#0000;
+    padding:40px 0;
+}
+
+
+.menu-text-center{
+    widows: 90%;
+    text-align: center;
+
+}
+
+.menu-text h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.menu-text p {
+    margin:20px 0;
+    line-height: 2;
+}
+.menu-text a{
+    display:inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding : 13px 20px;
+    border-radius: 200px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    cursor : pointer;
+}
+
+.menu-text a:hover{
+    background: #ffff;
+    border: 1px solid green;
+    color:black;
+}
+
+/* social icon */
+#social-icons{
+    height:150px;
+    background: #ffff;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+#social-icons a{
+    display:inline-block;
+    padding:5px 10px;
+    margin: 0 5px;
+    font-size:40px;
+    border-radius: 5px;
+    transition: transform 2s ease, color 2s ease;
+}
+
+#social-icons a:hover{
+    transform:translateY(-20px);
+}
+
+/* end of social icon */
+
+@media screen and(min-width: 776px)
+{
+    .menu{
+        display:flex;
+    }
+    .menu-text{
+        flex:0 0 30%;
+    }
+    .menu-image{
+        flex:0 0 70%;
+    }
+}
+
+@media screen and(min-width: 576px){
+    .about-center{
+        display : flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+    .about{
+        flex : 0 0 calc(50% - 16px);
+    }
+}
+@media screen and(min-width: 972px){
+    .about{
+        flex : 0 0 calc(33% - 16px);
+    }
+}
+
+
