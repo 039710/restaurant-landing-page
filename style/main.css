@@ -212,6 +212,10 @@ body{
     color:orange;
 }
 
+.number img{
+    color : red;
+    filter: invert(100%);
+}
 @media screen and(min-width: 776px)
 {
     .menu{
