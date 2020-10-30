@@ -189,6 +189,29 @@ body{
 
 /* end of social icon */
 
+#numbers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(/img/menu.jpg) center/cover repeat fixed;
+}
+.number{
+    text-align: center;
+    
+    padding : 60px 115px;
+    color : white;
+}
+
+.number p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.number:hover{
+    color:orange;
+}
+
 @media screen and(min-width: 776px)
 {
     .menu{
